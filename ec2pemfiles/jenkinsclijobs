@@ -1,0 +1,10 @@
+echo "Displaying jenkins jobs.."
+echo "-------------------------"
+
+jenkinsUserName=ramesh
+jenkinsToken=11d65c9f19d78602f20785faed534c7bca
+jenkinsURL=http://13.235.100.75:8080/
+
+java -jar jenkins-cli.jar -auth $jenkinsUserName:$jenkinsToken -s  $jenkinsURL  -webSocket list-jobs
+ 
+ 
